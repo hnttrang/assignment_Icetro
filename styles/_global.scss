@@ -1,0 +1,31 @@
+html{
+    background-color: $backgroundColor;
+    background-image: url(../assets/images/BG.png);
+    background-size: 100%;
+}
+
+
+body{
+    font-family: 'Prompt', sans-serif;
+    h4{
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 48px;
+        line-height: 62px;
+        margin: 1.5rem 0 0 0;
+    }
+    h5{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        margin: 1.5rem 0 0 0;
+    }
+    p{
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 1.5rem 0 0 0;
+    }
+}
+

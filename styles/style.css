@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;400&display=swap");
+html {
+  background-color: #3956FB;
+  background-image: url(../assets/images/BG.png);
+  background-size: 100%;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+}
+
+body h4 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 48px;
+  line-height: 62px;
+  margin: 1.5rem 0 0 0;
+}
+
+body h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  margin: 1.5rem 0 0 0;
+}
+
+body p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 1.5rem 0 0 0;
+}
+
+.header {
+  background-color: none;
+  height: 6.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo img {
+  padding-left: 6rem;
+  width: 106px;
+}
+
+.header__button {
+  text-decoration: none;
+  background-color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: 1rem;
+  padding: 0rem 2.125rem 0rem 2.125rem;
+  border-radius: 10px;
+}
+
+.header__button p {
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #3956FB;
+  font-weight: 600;
+}
+
+.header__button img {
+  padding: 1rem 0.5rem 1rem;
+}
+
+.slogan {
+  margin: 0;
+  padding-left: 6rem;
+  color: #FDFDFD;
+}
+
+.slogan h4 {
+  margin-bottom: 0;
+}
+
+.first-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  margin: 0rem 2rem 0 6rem;
+}
+
+.first-frame__left {
+  -webkit-box-flex: 20;
+      -ms-flex-positive: 20;
+          flex-grow: 20;
+}
+
+.first-frame__left__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-frame__left__info .container:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.first-frame__right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 0;
+  padding-left: 3rem;
+}
+
+.first-frame__right img {
+  width: 561px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+.slogan{
+    margin: 0;
+    padding-left: 6rem;
+    color: #FDFDFD;
+    h4{
+        margin-bottom: 0;
+    }
+}
+
+.first-frame{
+    display: flex;
+    color: white;
+    margin: 0rem 2rem 0 6rem;
+    &__left{
+        flex-grow: 20;
+        &__info{
+            display: flex;
+            .container:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__right{
+        flex-grow: 1;
+        margin-right: 0;
+        padding-left: 3rem;
+        img{
+            width: 561px;
+        }
+    }
+
+    
+}
