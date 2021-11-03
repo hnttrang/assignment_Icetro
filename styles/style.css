@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;400&display=swap");
 html {
-  background-color: #3956FB;
+  background-color: white;
   background-image: url(../assets/images/BG.png);
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -14,14 +15,14 @@ body h4 {
   letter-spacing: 1px;
   font-size: 48px;
   line-height: 62px;
-  margin: 1.5rem 0 0 0;
+  margin: 1rem 0 0.5rem 0;
 }
 
 body h5 {
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
-  margin: 1.5rem 0 0 0;
+  margin: 1rem 0 0.5rem 0;
 }
 
 body p {
@@ -29,10 +30,11 @@ body p {
   letter-spacing: 1px;
   font-size: 18px;
   line-height: 26px;
-  margin: 1.5rem 0 0 0;
+  margin: 1rem 0 0.5rem 0;
 }
 
-.header {
+.nav {
+  /*navigation */
   background-color: none;
   height: 6.875rem;
   display: -webkit-box;
@@ -43,18 +45,18 @@ body p {
           align-items: center;
 }
 
-.header a {
+.nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header__logo img {
+.nav__logo img {
   padding-left: 6rem;
   width: 106px;
 }
 
-.header__button {
+.nav__button {
   text-decoration: none;
   background-color: white;
   position: relative;
@@ -64,7 +66,7 @@ body p {
   border-radius: 10px;
 }
 
-.header__button p {
+.nav__button p {
   margin: 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -73,7 +75,7 @@ body p {
   font-weight: 600;
 }
 
-.header__button img {
+.nav__button img {
   padding: 1rem 0.5rem 1rem;
 }
 
@@ -87,7 +89,7 @@ body p {
   margin-bottom: 0;
 }
 
-.first-frame {
+.pano {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,23 +97,23 @@ body p {
   margin: 0rem 2rem 0 6rem;
 }
 
-.first-frame__left {
+.pano__left {
   -webkit-box-flex: 20;
       -ms-flex-positive: 20;
           flex-grow: 20;
 }
 
-.first-frame__left__info {
+.pano__left__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.first-frame__left__info .container:not(:last-child) {
+.pano__left__info .container:not(:last-child) {
   margin-right: 2rem;
 }
 
-.first-frame__right {
+.pano__right {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -119,7 +121,83 @@ body p {
   padding-left: 3rem;
 }
 
-.first-frame__right img {
+.pano__right img {
   width: 561px;
+}
+
+.title h4 {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 70px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #043C9C;
+}
+
+.first-frame {
+  padding-top: 7.875rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first-frame__left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 1.5rem;
+  left: -1px;
+}
+
+.first-frame__left img {
+  width: 700px;
+}
+
+.first-frame__right {
+  padding-left: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.first-frame__right h4 {
+  color: #043C9C;
+  font-weight: 700;
+  size: 54px;
+  line-height: 68px;
+  letter-spacing: 0;
+}
+
+.first-frame__right p {
+  color: #5C7392;
+}
+
+.first-frame__right h5 {
+  color: #043C9C;
+  font-weight: 700;
+  font-size: 18px;
+  height: 22px;
+}
+
+.first-frame__right__shape {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.first-frame__right__shape img:not(:last-child) {
+  padding-right: 1rem;
+}
+
+.first-frame__right .button {
+  color: white;
+  text-decoration: none;
+  background-color: #3956FB;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 48px;
+  padding: 1rem 2.75rem;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

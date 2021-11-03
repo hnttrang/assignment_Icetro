@@ -1,6 +1,7 @@
 html{
-    background-color: $backgroundColor;
+    background-color: white;
     background-image: url(../assets/images/BG.png);
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
@@ -12,20 +13,20 @@ body{
         letter-spacing: 1px;
         font-size: 48px;
         line-height: 62px;
-        margin: 1.5rem 0 0 0;
+        margin: 1rem 0 0.5rem 0;
     }
     h5{
         font-weight: 700;
         font-size: 32px;
         line-height: 39px;
-        margin: 1.5rem 0 0 0;
+        margin: 1rem 0 0.5rem 0;
     }
     p{
         font-weight: 400;
         letter-spacing: 1px;
         font-size: 18px;
         line-height: 26px;
-        margin: 1.5rem 0 0 0;
+        margin: 1rem 0 0.5rem 0;
     }
 }
 
