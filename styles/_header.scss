@@ -11,7 +11,7 @@
     &__logo{
         img{
             padding-left: 6rem;
-            width: 106px;
+            width: auto;
         }
     }
 
@@ -64,7 +64,8 @@
         margin-right: 0;
         padding-left: 3rem;
         img{
-            width: 600px;
+            width: 100%;
+            height: auto;
         }
     }
 

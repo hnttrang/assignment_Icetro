@@ -41,6 +41,7 @@
         line-height: 48px;
         padding: 1rem 2.75rem;
         border-radius: 10px;
+        cursor: pointer;
     }
 
 }
@@ -55,7 +56,8 @@
         left: -1px;
         
         img{
-            width: 700px;  
+            width: 100%;
+            height: auto;  
         }
     }
 
@@ -73,7 +75,7 @@
     }
 }
 
-.background{ background-color: $backgroundColor; height: 85vh;}
+.background{ background-color: $backgroundColor; width:100%; height: 85vh;}
 
 .second-frame{
     padding: 5rem 0 0 8rem;
@@ -98,14 +100,15 @@
     &__right{
         flex-grow: 1;
         img{
-            padding-top: 5rem;
-            width: 525px;
+            padding-top: 3rem;
+            width: 100%;
+            height: auto;
         }
     }
 }
 
 .third-frame{
-    padding-top: 5rem;
+    // padding-top: 5rem;
     background-color: white;
     
     &__left{
@@ -114,7 +117,8 @@
         left: -1px;
         
         img{
-            width: 700px;  
+            width: 100%;
+            height: auto;  
         }
     }
 
@@ -129,5 +133,58 @@
             }
         }   
     }
+}
 
+.video-frame{
+    background-image: url(/assets/images/video1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: inset 0 0 0 700px rgba(0,0,0,.5);
+
+    &::before{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    &__text{
+        h5{
+            color: white;
+        }
+    }
+}
+
+.customer-pano{
+    padding-top: 3rem;
+    text-align: center;
+    h5{
+        color: $titleColor;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;}
+    &__logo{
+        padding-top: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.feedback{
+    margin-top: 2rem;
+    background-color: $reviewBackgroundColor;
+    padding-top: 2rem;
+    text-align: center;
+    p{ color: $commentColor;}
+    h5{color: $titleColor;}
+    img{
+        padding-top: 0.5rem;
+    }
 }

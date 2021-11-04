@@ -4,6 +4,7 @@ html {
   background-image: url(../assets/images/BG.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  width: 100%;
 }
 
 body {
@@ -53,7 +54,7 @@ body p {
 
 .nav__logo img {
   padding-left: 6rem;
-  width: 106px;
+  width: auto;
 }
 
 .nav__button {
@@ -122,7 +123,8 @@ body p {
 }
 
 .pano__right img {
-  width: 600px;
+  width: 100%;
+  height: auto;
 }
 
 .title h4 {
@@ -170,6 +172,7 @@ body p {
   line-height: 48px;
   padding: 1rem 2.75rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .first-frame {
@@ -186,7 +189,8 @@ body p {
 }
 
 .first-frame__left img {
-  width: 700px;
+  width: 100%;
+  height: auto;
 }
 
 .first-frame__right {
@@ -207,6 +211,7 @@ body p {
 
 .background {
   background-color: #3956FB;
+  width: 100%;
   height: 85vh;
 }
 
@@ -250,12 +255,12 @@ body p {
 }
 
 .second-frame__right img {
-  padding-top: 5rem;
-  width: 525px;
+  padding-top: 3rem;
+  width: 100%;
+  height: auto;
 }
 
 .third-frame {
-  padding-top: 5rem;
   background-color: white;
 }
 
@@ -268,7 +273,8 @@ body p {
 }
 
 .third-frame__left img {
-  width: 700px;
+  width: 100%;
+  height: auto;
 }
 
 .third-frame__right {
@@ -284,5 +290,74 @@ body p {
 
 .third-frame__right__shape img:not(:last-child) {
   padding-right: 1rem;
+}
+
+.video-frame {
+  background-image: url(/assets/images/video1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 0 700px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+.video-frame::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.video-frame__text h5 {
+  color: white;
+}
+
+.customer-pano {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.customer-pano h5 {
+  color: #043C9C;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.customer-pano__logo {
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.feedback {
+  margin-top: 2rem;
+  background-color: #F3FAFF;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.feedback p {
+  color: #5C7392;
+}
+
+.feedback h5 {
+  color: #043C9C;
+}
+
+.feedback img {
+  padding-top: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
