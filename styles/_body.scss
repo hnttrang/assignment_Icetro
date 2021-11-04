@@ -9,10 +9,45 @@
     }
 }
 
+.body{
+    display: flex;
+    h4{
+        color: $titleColor;
+        font-weight: 700;
+        size: 54px;
+        line-height: 68px;
+        letter-spacing: 0;
+    }
+
+    p{
+        font-size: 15px;
+        color: #5C7392;
+    }
+    
+    h5{
+        color: $titleColor;
+        font-weight: 700;
+        font-size: 18px;
+        height: 22px;
+    }
+
+    .button{
+        color: white;
+        text-decoration: none;
+        background-color: $backgroundColor;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 18px;
+        line-height: 48px;
+        padding: 1rem 2.75rem;
+        border-radius: 10px;
+    }
+
+}
+
 .first-frame{
     padding-top: 7.875rem;
     background-color: white;
-    display: flex;
 
     &__left{
         flex-grow: 1;
@@ -28,24 +63,63 @@
         padding-left: 2rem;
         flex-grow: 1;
 
-        h4{
-            color: $titleColor;
-            font-weight: 700;
-            size: 54px;
-            line-height: 68px;
-            letter-spacing: 0;
-        }
+        &__shape{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            img:not(:last-child){
+                padding-right: 1rem;
+            }
+        }   
+    }
+}
 
-        p{
-            color: #5C7392;
+.background{ background-color: $backgroundColor; height: 85vh;}
+
+.second-frame{
+    padding: 5rem 0 0 8rem;
+    background-image: url(/assets/images/Pattern.png);
+
+    h4{color: white;}
+    h5{color: white;}
+    p{color: white;}
+
+    .button{
+        background-color: white;
+        color: $backgroundColor;
+    }
+
+    &__left{
+        flex-grow: 2;
+        img{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
         }
+    }
+    &__right{
+        flex-grow: 1;
+        img{
+            padding-top: 5rem;
+            width: 525px;
+        }
+    }
+}
+
+.third-frame{
+    padding-top: 5rem;
+    background-color: white;
+    
+    &__left{
+        flex-grow: 1;
+        padding-top: 1.5rem;
+        left: -1px;
         
-        h5{
-            color: $titleColor;
-            font-weight: 700;
-            font-size: 18px;
-            height: 22px;
+        img{
+            width: 700px;  
         }
+    }
+
+    &__right{
+        flex-grow: 1;
 
         &__shape{
             padding-top: 1rem;
@@ -54,17 +128,6 @@
                 padding-right: 1rem;
             }
         }   
-    
-        .button{
-            color: white;
-            text-decoration: none;
-            background-color: $backgroundColor;
-            font-weight: 400;
-            letter-spacing: 1px;
-            font-size: 18px;
-            line-height: 48px;
-            padding: 1rem 2.75rem;
-            border-radius: 10px;
-        }
     }
+
 }
