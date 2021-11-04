@@ -140,6 +140,13 @@
             @include breakpoint-down(medium){
                 position: absolute;
                 top: -30vh;
+                width: 50%;
+                right: 15vw;
+            }
+
+            @include breakpoint-down(small){
+                position: absolute;
+                top: -30vh;
                 width: 70%;
                 right: 15vw;
             }
@@ -212,6 +219,7 @@
         padding-top: 1.5rem;
         display: flex;
         flex-wrap: nowrap;
+        justify-content: center;
         @include breakpoint-down(medium){
             flex-flow: column;
         }

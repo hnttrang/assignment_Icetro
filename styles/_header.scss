@@ -10,6 +10,9 @@
 
     &__logo{
         img{
+            @include breakpoint-down(medium){
+                padding-left: 1rem;
+            }
             padding-left: 6rem;
             width: auto;
         }
@@ -38,6 +41,9 @@
 
 .slogan{
     margin: 0;
+    @include breakpoint-down(medium){
+        padding-left: 1rem;
+    }
     padding-left: 6rem;
     color: #FDFDFD;
     h4{
@@ -48,11 +54,15 @@
 .pano{
     @include breakpoint-down(medium){
         flex-flow: wrap;
+        margin: 1rem;
     }
     display: flex;
     color: white;
     margin: 0rem 2rem 0 6rem;
     &__left{
+        @include breakpoint-down(medium){
+            padding-left: 1rem;
+        }
         flex-grow: 20;
         &__info{
             display: flex;
@@ -69,6 +79,9 @@
         margin-right: 0;
         padding-left: 3rem;
         img{
+            @include breakpoint-down(small){
+                padding-top: 10rem;
+            }
             width: 100%;
             height: auto;
         }

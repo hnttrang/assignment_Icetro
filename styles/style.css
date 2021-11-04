@@ -96,6 +96,12 @@ body p {
   width: auto;
 }
 
+@media (max-width: 899px) {
+  .nav__logo img {
+    padding-left: 1rem;
+  }
+}
+
 .nav__button {
   text-decoration: none;
   background-color: white;
@@ -125,6 +131,12 @@ body p {
   color: #FDFDFD;
 }
 
+@media (max-width: 899px) {
+  .slogan {
+    padding-left: 1rem;
+  }
+}
+
 .slogan h4 {
   margin-bottom: 0;
 }
@@ -141,6 +153,7 @@ body p {
   .pano {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+    margin: 1rem;
   }
 }
 
@@ -148,6 +161,12 @@ body p {
   -webkit-box-flex: 20;
       -ms-flex-positive: 20;
           flex-grow: 20;
+}
+
+@media (max-width: 899px) {
+  .pano__left {
+    padding-left: 1rem;
+  }
 }
 
 .pano__left__info {
@@ -175,6 +194,12 @@ body p {
 .pano__right img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 639px) {
+  .pano__right img {
+    padding-top: 10rem;
+  }
 }
 
 .title {
@@ -367,6 +392,15 @@ body p {
   .second-frame__right img {
     position: absolute;
     top: -30vh;
+    width: 50%;
+    right: 15vw;
+  }
+}
+
+@media (max-width: 639px) {
+  .second-frame__right img {
+    position: absolute;
+    top: -30vh;
     width: 70%;
     right: 15vw;
   }
@@ -452,6 +486,9 @@ body p {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 899px) {
@@ -529,6 +566,7 @@ footer {
 
 .footer h5 {
   color: white;
+  padding-top: 1rem;
 }
 
 .footer p {
