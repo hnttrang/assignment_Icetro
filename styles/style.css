@@ -359,7 +359,6 @@ body p {
 }
 
 .second-frame__right img {
-  padding-top: 3rem;
   width: 100%;
   height: auto;
 }
@@ -394,6 +393,7 @@ body p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding-left: 1rem;
 }
 
 .third-frame__right__shape {
@@ -463,8 +463,15 @@ body p {
   }
 }
 
+.customer-pano__logo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .customer-pano__logo img {
-  width: 25%;
+  padding: 1rem 0 1rem 0;
+  width: 50%;
 }
 
 @media (max-width: 899px) {
@@ -534,23 +541,31 @@ footer {
 }
 
 .footer input[type=email] ::-webkit-input-placeholder {
+  width: 100%;
   font-family: "Prompt";
   padding-left: 1rem;
 }
 
 .footer input[type=email] :-ms-input-placeholder {
+  width: 100%;
   font-family: "Prompt";
   padding-left: 1rem;
 }
 
 .footer input[type=email] ::-ms-input-placeholder {
+  width: 100%;
   font-family: "Prompt";
   padding-left: 1rem;
 }
 
 .footer input[type=email] ::placeholder {
+  width: 100%;
   font-family: "Prompt";
   padding-left: 1rem;
+}
+
+.footer__info {
+  padding-right: 1rem;
 }
 
 .footer__info__form {

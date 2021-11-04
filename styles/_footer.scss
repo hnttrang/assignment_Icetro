@@ -16,8 +16,10 @@ footer{
     padding-left: 5rem;
     h5{color: white;}
     p{color: white;}
+
     input[type=email]{
         ::placeholder{
+            width: 100%;
             font-family: "Prompt";
             padding-left: 1rem;
         }
@@ -26,6 +28,7 @@ footer{
     }
     justify-content: space-between;
     &__info{
+        padding-right: 1rem;
         // sending mail form 
         &__form{ 
             margin-top: 2rem;
