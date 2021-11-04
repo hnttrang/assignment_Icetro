@@ -6,6 +6,12 @@ footer{
     height: auto;
 }
 .footer{
+
+    @include breakpoint-down(medium){
+        display: block;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
     position: relative;
     padding-left: 5rem;
     h5{color: white;}
@@ -39,6 +45,13 @@ footer{
 
     &__connect{
         .icon{
+            
+        @include breakpoint-down(medium){
+            position: relative;
+            align-self: center;
+            left: 0;
+            bottom: 3rem;
+        }
             position: absolute;
             right: 5rem;
             bottom: 10rem;

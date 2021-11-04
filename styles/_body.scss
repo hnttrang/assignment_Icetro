@@ -1,15 +1,37 @@
 .title{
-    h4{
-        font-weight: 800;
+    @include breakpoint-down(medium){
+        h4{
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 34px;
+        }
+    }
+
+    font-weight: 800;
         font-size: 54px;
         line-height: 70px;
         letter-spacing: 1px;
         text-align: center;
         color: $titleColor;
-    }
+    
 }
 
 .body{
+    @include breakpoint-down(medium){
+        flex-wrap: wrap;
+
+        h4{
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 34px;
+            }
+
+        h5{font-size: 16px;}
+
+        p{font-size: 14px;}
+
+    }
+
     display: flex;
     flex-wrap: nowrap;
     h4{
@@ -48,6 +70,9 @@
 }
 
 .first-frame{
+    @include breakpoint-down(medium){
+        padding: 8rem 0 0 1rem; 
+    }
     padding-top: 7.875rem;
     background-color: white;
     &__left{
@@ -62,7 +87,7 @@
     }
 
     &__right{
-        padding-left: 2rem;
+        padding-left: 1rem;
         flex-grow: 1;
 
         &__shape{
@@ -78,6 +103,13 @@
 .background{ background-color: $backgroundColor; width:100%; height: 85vh;}
 
 .second-frame{
+
+    @include breakpoint-down(medium){
+        margin-top: 15rem;
+        position: relative;
+        flex-direction: column-reverse;
+        padding: 4rem 0 5rem 1rem; 
+    }
     margin-top: 1rem;
     padding: 4rem 0 0 8rem;
     background-image: url(/assets/images/Pattern.png);
@@ -92,6 +124,10 @@
     }
 
     &__left{
+        @include breakpoint-down(medium){
+            position: relative;
+            padding-top: 5rem;
+        }
         flex-grow: 2;
         img{
             padding-top: 1rem;
@@ -101,6 +137,12 @@
     &__right{
         flex-grow: 1;
         img{
+            @include breakpoint-down(medium){
+                position: absolute;
+                top: -30vh;
+                width: 70%;
+                right: 15vw;
+            }
             padding-top: 3rem;
             width: 100%;
             height: auto;
@@ -140,17 +182,21 @@
     margin-top: 1rem;
     background-image: url(/assets/images/video1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    box-shadow: inset 0 0 0 700px rgba(0,0,0,.5);
+    background-size: cover;
+    box-shadow: inset 0 70vh 0 0 rgba(0,0,0,.5);
     
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+     height: 70vh;
 
     &__text{
         h5{
             color: white;
+            @include breakpoint-down(medium){
+                margin: 1rem 0 2rem 0;
+                padding: 1rem 0 2rem 0;
+            }
         }
     }
 }
@@ -166,7 +212,18 @@
     &__logo{
         padding-top: 1.5rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        @include breakpoint-down(medium){
+            flex-flow: column;
+        }
+
+        img{
+            width: 25%;
+            @include breakpoint-down(medium){
+                width: 50%;
+                align-self: center;
+            }
+        }
     }
 }
 
