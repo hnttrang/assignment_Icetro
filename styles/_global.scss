@@ -2,7 +2,6 @@ html{
     @include breakpoint-up(medium){
         background-color: white;
         background-image: url(../assets/images/BG.png);
-        background-repeat: no-repeat;
         background-size: contain;
     }
 
@@ -13,6 +12,7 @@ html{
 
 
 body{
+    margin: 0%;
     font-family: 'Prompt', sans-serif;
     h4{
         font-weight: 700;

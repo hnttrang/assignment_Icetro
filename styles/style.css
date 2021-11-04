@@ -9,12 +9,12 @@ html {
   html {
     background-color: white;
     background-image: url(../assets/images/BG.png);
-    background-repeat: no-repeat;
     background-size: contain;
   }
 }
 
 body {
+  margin: 0%;
   font-family: 'Prompt', sans-serif;
 }
 
