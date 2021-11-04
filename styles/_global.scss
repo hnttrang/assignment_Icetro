@@ -1,11 +1,14 @@
-@import "_mixins";
-
 html{
+    @include breakpoint-up(medium){
+        background-color: white;
+        background-image: url(../assets/images/BG.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
     background-color: white;
-    background-image: url(../assets/images/BG.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
+    background-image: url(/assets/images/BG.png);
 }
 
 

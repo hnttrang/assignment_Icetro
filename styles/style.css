@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;500;700;900&display=swap");
 html {
   background-color: white;
-  background-image: url(../assets/images/BG.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100%;
+  background-image: url(/assets/images/BG.png);
+}
+
+@media (min-width: 900px) {
+  html {
+    background-color: white;
+    background-image: url(../assets/images/BG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 body {
@@ -128,6 +135,13 @@ body p {
   display: flex;
   color: white;
   margin: 0rem 2rem 0 6rem;
+}
+
+@media (max-width: 899px) {
+  .pano {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
 }
 
 .pano__left {

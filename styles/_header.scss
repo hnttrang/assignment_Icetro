@@ -46,6 +46,9 @@
 }
 
 .pano{
+    @include breakpoint-down(medium){
+        flex-flow: wrap;
+    }
     display: flex;
     color: white;
     margin: 0rem 2rem 0 6rem;
