@@ -11,6 +11,7 @@
 
 .body{
     display: flex;
+    flex-wrap: nowrap;
     h4{
         color: $titleColor;
         font-weight: 700;
@@ -49,7 +50,6 @@
 .first-frame{
     padding-top: 7.875rem;
     background-color: white;
-
     &__left{
         flex-grow: 1;
         padding-top: 1.5rem;
@@ -78,7 +78,8 @@
 .background{ background-color: $backgroundColor; width:100%; height: 85vh;}
 
 .second-frame{
-    padding: 5rem 0 0 8rem;
+    margin-top: 1rem;
+    padding: 4rem 0 0 8rem;
     background-image: url(/assets/images/Pattern.png);
 
     h4{color: white;}
@@ -136,19 +137,11 @@
 }
 
 .video-frame{
+    margin-top: 1rem;
     background-image: url(/assets/images/video1.png);
     background-repeat: no-repeat;
     background-size: 100%;
     box-shadow: inset 0 0 0 700px rgba(0,0,0,.5);
-
-    &::before{
-        content: ' ';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
     
     text-align: center;
     justify-content: center;
@@ -181,6 +174,7 @@
     margin-top: 2rem;
     background-color: $reviewBackgroundColor;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
     p{ color: $commentColor;}
     h5{color: $titleColor;}

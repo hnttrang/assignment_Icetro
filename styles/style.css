@@ -63,7 +63,7 @@ body p {
   position: relative;
   margin-left: auto;
   margin-right: 1rem;
-  padding: 0rem 2.125rem 0rem 2.125rem;
+  padding: 0rem 2rem 0rem 1.5rem;
   border-radius: 10px;
 }
 
@@ -77,7 +77,7 @@ body p {
 }
 
 .nav__button img {
-  padding: 1rem 0.5rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem;
 }
 
 .slogan {
@@ -115,6 +115,10 @@ body p {
 }
 
 .pano__right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -140,6 +144,8 @@ body p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .body h4 {
@@ -216,7 +222,8 @@ body p {
 }
 
 .second-frame {
-  padding: 5rem 0 0 8rem;
+  margin-top: 1rem;
+  padding: 4rem 0 0 8rem;
   background-image: url(/assets/images/Pattern.png);
 }
 
@@ -293,6 +300,7 @@ body p {
 }
 
 .video-frame {
+  margin-top: 1rem;
   background-image: url(/assets/images/video1.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -306,15 +314,6 @@ body p {
       -ms-flex-align: center;
           align-items: center;
   height: 70vh;
-}
-
-.video-frame::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .video-frame__text h5 {
@@ -346,6 +345,7 @@ body p {
   margin-top: 2rem;
   background-color: #F3FAFF;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -359,5 +359,91 @@ body p {
 
 .feedback img {
   padding-top: 0.5rem;
+}
+
+footer {
+  background-color: #3956FB;
+  background-image: url(/assets/images/FooterPattern.png);
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  position: relative;
+  padding-left: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer h5 {
+  color: white;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer input[type=email] {
+  border: none;
+  background: none;
+}
+
+.footer input[type=email] ::-webkit-input-placeholder {
+  font-family: "Prompt";
+  padding-left: 1rem;
+}
+
+.footer input[type=email] :-ms-input-placeholder {
+  font-family: "Prompt";
+  padding-left: 1rem;
+}
+
+.footer input[type=email] ::-ms-input-placeholder {
+  font-family: "Prompt";
+  padding-left: 1rem;
+}
+
+.footer input[type=email] ::placeholder {
+  font-family: "Prompt";
+  padding-left: 1rem;
+}
+
+.footer__info__form {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 11px;
+}
+
+.footer__info__form .button {
+  margin: 0.2rem;
+  color: #043C9C;
+  background-color: white;
+  padding: 0 2.5rem 0.5rem 2.5rem;
+}
+
+.footer__info__form .button p {
+  color: #043C9C;
+  margin: 0;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+
+.footer__connect .icon {
+  position: absolute;
+  right: 5rem;
+  bottom: 10rem;
+}
+
+.footer__connect .icon img {
+  padding-right: 1rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
