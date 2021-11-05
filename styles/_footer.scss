@@ -17,20 +17,19 @@ footer{
     h5{color: white; padding-top: 1rem;}
     p{color: white;}
 
-    input[type=email]{
-        ::placeholder{
-            width: 100%;
-            font-family: "Prompt";
-            padding-left: 1rem;
-        }
-        border: none;
-        background: none;
-    }
     justify-content: space-between;
     &__info{
         padding-right: 1rem;
         // sending mail form 
         &__form{ 
+            input[type=email]{
+                width: 100%;
+                font-family: "Prompt";
+                padding-left: 1rem;
+                border: none;
+                background: none;
+            }
+
             margin-top: 2rem;
             display: flex;
             justify-content: space-between;

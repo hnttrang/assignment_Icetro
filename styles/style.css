@@ -575,35 +575,6 @@ footer {
   color: white;
 }
 
-.footer input[type=email] {
-  border: none;
-  background: none;
-}
-
-.footer input[type=email] ::-webkit-input-placeholder {
-  width: 100%;
-  font-family: "Prompt";
-  padding-left: 1rem;
-}
-
-.footer input[type=email] :-ms-input-placeholder {
-  width: 100%;
-  font-family: "Prompt";
-  padding-left: 1rem;
-}
-
-.footer input[type=email] ::-ms-input-placeholder {
-  width: 100%;
-  font-family: "Prompt";
-  padding-left: 1rem;
-}
-
-.footer input[type=email] ::placeholder {
-  width: 100%;
-  font-family: "Prompt";
-  padding-left: 1rem;
-}
-
 .footer__info {
   padding-right: 1rem;
 }
@@ -618,6 +589,14 @@ footer {
           justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 11px;
+}
+
+.footer__info__form input[type=email] {
+  width: 100%;
+  font-family: "Prompt";
+  padding-left: 1rem;
+  border: none;
+  background: none;
 }
 
 .footer__info__form .button {
