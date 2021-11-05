@@ -597,6 +597,7 @@ footer {
   padding-left: 1rem;
   border: none;
   background: none;
+  outline: none;
 }
 
 .footer__info__form .button {
