@@ -1,13 +1,13 @@
 html{
     @include breakpoint-up(medium){
         background-color: white;
-        background-image: url(../assets/images/BG.png);
+        background-image: url(assets/images/BG.png);
         background-size: contain;
     }
 
     background-color: white;
     background-repeat: no-repeat;
-    background-image: url(/assets/images/BG.png);
+    background-image: url(assets/images/BG.png);
 }
 
 
