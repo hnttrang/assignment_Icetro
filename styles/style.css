@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;500;700;900&display=swap");
 html {
+  max-width: 2048px;
+  min-width: 375px;
   background-color: white;
   background-repeat: no-repeat;
   background-image: url(../assets/images/BG.png);
