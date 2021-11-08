@@ -139,7 +139,7 @@
         img{
             @include breakpoint-down(medium){
                 position: absolute;
-                top: -30vh;
+                top: -20vh;
                 width: 50%;
                 right: 15vw;
             }

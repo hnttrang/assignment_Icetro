@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;500;700;900&display=swap");
 html {
-  max-width: 2048px;
+  max-width: 1040px;
   min-width: 320px;
+  margin: auto;
   background-color: white;
   background-repeat: no-repeat;
   background-image: url(../assets/images/BG.png);
@@ -393,7 +394,7 @@ body p {
 @media (max-width: 899px) {
   .second-frame__right img {
     position: absolute;
-    top: -30vh;
+    top: -20vh;
     width: 50%;
     right: 15vw;
   }

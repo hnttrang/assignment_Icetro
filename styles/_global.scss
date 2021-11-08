@@ -1,6 +1,7 @@
 html{
-    max-width: 2048px;
+    max-width: 1040px;
     min-width: 320px;
+    margin: auto;
     @include breakpoint-up(medium){
         background-color: white;
         background-image: url(../assets/images/BG.png);
